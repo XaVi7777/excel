@@ -8,7 +8,6 @@ export class StoreSubscriber {
   }
 
   subscribeComponents(components) {
-    console.log('SUbscriber');
     this.prevState = this.store.getState();
 
     this.sub = this.store.subscribe(state => {

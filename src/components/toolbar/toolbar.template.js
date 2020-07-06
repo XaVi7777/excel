@@ -21,35 +21,37 @@ function toButton(button) {
 export function createToolbar(state) {
   const buttons = [
     {
-      icon: 'format_align_left',
-      active: false,
       value: { textAlign: 'left' },
+      icon: 'format_align_left',
+      active: state['textAligh'] === 'left',
     },
     {
-      icon: 'format_align_center',
-      active: false,
       value: { textAlign: 'center' },
+      icon: 'format_align_center',
+      active: state['textAligh'] === 'center',
 
     },
     {
-      icon: 'format_align_right',
-      active: false,
       value: { textAlign: 'right' },
+      icon: 'format_align_right',
+      active: state['textAligh'] === 'right',
     },
     {
+      value: { fontWeight: state['fontWeight'] === 'bold' ? 'normal' : 'bold' },
       icon: 'format_bold',
       active: state['fontWeight'] === 'bold',
-      value: { fontWeight: state['fontWeight'] === 'bold' ? 'normal' : 'bold' },
     },
     {
+      value: { fontStyle: state['fontStyle'] === 'italic' ?
+       'normal' : 'italic' },
       icon: 'format_italic',
       active: false,
-      value: { fontStyle: 'italic' },
     },
     {
+      value: { textDecoration: state['textDecoration'] === 'underline' ?
+       'none' : 'underline' },
       icon: 'format_underlined',
       active: false,
-      value: { textDecoration: 'underlined' },
     },
   ];
 
