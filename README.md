@@ -1,5 +1,5 @@
 # Excel
-**Excel** – pet project. Аналог всем известного Microsoft Excel выполненный на чистом на JavaScript
+**Excel(pet project)** – Аналог всем известного Microsoft Excel выполненный на чистом на JavaScript
 
 ## Getting Started
 ```sh
